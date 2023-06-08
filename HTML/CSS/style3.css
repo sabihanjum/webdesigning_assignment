@@ -1,0 +1,26 @@
+
+.bigbox{
+    width: 900px;
+    height: 900px;
+    border: 5px solid rgb(4, 105, 112);
+    border-color: blueviolet;
+    float: left;
+    margin-top: 5px;
+}
+
+imgs{
+    width: 600px;
+    height: 300px;
+    border: 5px solid rgb(4, 105, 112);
+    border-color: blueviolet;
+    float: right;
+    margin-right: 50px;
+}
+#topbox{
+    margin-top: 20px;
+    float: right;
+}
+#bottombox{
+    margin-top: 10px;
+    float: left;
+}
