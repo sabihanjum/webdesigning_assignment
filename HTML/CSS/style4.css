@@ -1,0 +1,126 @@
+.top{
+    width: 100%;
+    height: 100px;
+    border: 1px rgb(150, 150, 235);
+}
+.bottom{
+    width:100% ;
+    height:500px ;
+    border: 1px rgb(231, 141, 231);
+}
+.logo{
+    width:190px ;
+    height:100px ;
+    border: 1px  rgb(149, 223, 192);
+    background-color: rgb(131, 168, 224);
+    background-image: url("https://th.bing.com/th?id=OIP.ur9_QIe93EXJKQiP_UCoLgAAAA&w=273&h=228&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2");
+    background-size: 80px 50px;
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+.heading{
+    position: fixed;
+    top: 10px;
+    left: 220px;
+    width:1120px ;
+    height:90px ;
+    border: 1px  rgb(156, 149, 233);
+    background-color: rgb(20, 233, 197);
+    text-align: center;
+    text-decoration: rgb(5, 162, 235);
+    
+}
+.left{
+    width: 45%;
+    height: 450px;
+    border: 1px dashed rgb(169, 212, 143);
+}
+.right{
+    position: fixed;
+    top: 120px;
+    left: 650px;
+    width: 50%;
+    height: 450px;
+    border: 1px dashed rgb(189, 221, 136);
+    float: right;
+}
+.imgs{
+    width: 250px;
+    height: 190px;
+    border: 1px dashed rgb(241, 169, 181);
+}
+#one,#three{
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+}
+#two, #four{
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+#one{
+    background-image: url("https://th.bing.com/th/id/R.ae87891b3dde7b28712b75d14342f1a5?rik=2ZT%2baXLkZYcxWg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fnature-wallpaper-27.jpg&ehk=jIVFSOxLN%2fQKs4hEfZHNWAeXoeXkeEXooP%2fTy9Vwkek%3d&risl=&pid=ImgRaw&r=0");
+    background-size: 300px 200px;
+}
+#two{
+    background-image: url("https://th.bing.com/th?q=Green+Nature&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247");
+    background-size: 300px 200px;
+}
+#three{
+    background-image: url("https://th.bing.com/th?id=ODL.bca71c57bf79e9b05fbb09547cee98df&w=197&h=102&c=7&rs=1&qlt=80&o=6&dpr=1.1&pid=RichNav");
+    background-size: 300px 200px;
+}
+#four{
+    background-image: url("https://th.bing.com/th/id/OIP.E4IJcali_762Oo_vNhhbFgHaEK?w=328&h=185&c=7&r=0&o=5&dpr=1.1&pid=1.7");
+    background-size: 300px 200px;
+}
+
+.v{
+    position: fixed;
+    top: 120px;
+    left: 650px;
+    width: 50%;
+    height: 250px;
+    border: 1px rgb(197, 230, 144);
+    float: right;
+
+}
+video{
+    position: fixed;
+}
+.txt{
+    position: fixed;
+    top: 380px;
+    left: 650px;
+    width: 50%;
+    height: 200px;
+    border: 0px rgb(181, 212, 130);
+    float: right;
+}
+p{
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Lucida sans', 'Lucida sans regular','Lucida grand','lucida sans unicode', 'Geneva Verdana, Sans-serif';
+    margin-left: 5px;
+    margin-right: 5px;
+    align-content: center;
+    line-height: 30px;
+}
+#one:hover,#two:hover,#three:hover,#four:hover{
+    transform: scale(2);
+}
+#one,#two,#three,#four{
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+}
+h1{
+    color:rgb(1, 19, 20);
+    text-align: center;
+}
+body{
+    background-color: rgb(152, 240, 235);
+}
+
