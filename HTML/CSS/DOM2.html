@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <P id="p1">
+        I am teacher
+    </P>
+    <script>
+        function getcube() {
+            var n = document.getElementById("no").value;
+            /*document.write("The cube is :" + n);*/
+            alert("The cube of the given no is  " + n * n * n);
+            document.getElementById("p1").innerHTML = "I am student"
+
+        }
+
+    </script>
+    <form name="f">
+        <input type="text" id="no">
+        <br>
+        <input type="button" value="findcube" onclick="getcube()">
+    </form>
+
+
+</body>
+
+</html>
