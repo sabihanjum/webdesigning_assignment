@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Add an HTML element and give id to it-->
+    <button id = "mybutton">
+        Click Me and check
+    </button>
+    <script>
+        //Assign element to a variable using id
+        const b = document.getElementById("mybutton");
+        //define function
+        function handleit()
+        {
+            alert("You Clicked");
+        }
+        //add event listener to element
+        b.addEventListener('click', handleit);
+    </script>
+</body>
+</html>
