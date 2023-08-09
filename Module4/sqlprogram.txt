@@ -1,0 +1,96 @@
+1)
+Microsoft Windows [Version 10.0.22621.1992]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\drsab>cd..
+
+C:\Users>cd..
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql -u admin -p
+Enter password: *************
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database sampledatabases;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use sampledatabase
+Database changed
+
+MariaDB [sampledatabase]> create table user(
+    -> username char(20) PRIMARY KEY,
+    -> password varchar(20),
+    -> email varchar(40)
+    -> );
+Query OK, 0 rows affected (0.035 sec)
+
+MariaDB [sampledatabase]> INSERT INTO user(username, password, email) VALUES('abc','password','abc@gmail.com');
+Query OK, 1 row affected (0.029 sec)
+
+MariaDB [sampledatabase]> select * from user;
++----------+----------+---------------+
+| username | password | email         |
++----------+----------+---------------+
+| abc      | password | abc@gmail.com |
++----------+----------+---------------+
+1 row in set (0.001 sec)
+
+2)
+MariaDB [sampledatabase]> CREATE TABLE employee(
+    -> id INT PRIMARY KEY,
+    -> name VARCHAR(50),
+    -> age INT,
+    -> department VARCHAR(50)
+    -> );
+Query OK, 0 rows affected (0.015 sec)
+
+MariaDB [sampledatabase]> INSERT INTO employee(id, name, age, department) VALUES(1, 'John Doe', 30, 'HR'),(2, 'Jane Smith', 28, 'IT'),(3, 'Michael Johnson', 35, 'Finance'),(4, 'Emily Brown', 25, 'Marketing'),(5, 'Robert Davis', 40, 'Operations');
+Query OK, 5 rows affected (0.024 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [sampledatabase]> select * from employee;
++----+-----------------+------+------------+
+| id | name            | age  | department |
++----+-----------------+------+------------+
+|  1 | John Doe        |   30 | HR         |
+|  2 | Jane Smith      |   28 | IT         |
+|  3 | Michael Johnson |   35 | Finance    |
+|  4 | Emily Brown     |   25 | Marketing  |
+|  5 | Robert Davis    |   40 | Operations |
++----+-----------------+------+------------+
+5 rows in set (0.001 sec)
+
+3)
+MariaDB [sampledatabase]> CREATE TABLE customers (
+    -> customer_id INT PRIMARY KEY,
+    -> first_name VARCHAR(50),
+    -> last_name VARCHAR(50),
+    -> email VARCHAR(100),
+    -> phone_number VARCHAR(15)
+    -> );
+Query OK, 0 rows affected (0.020 sec)
+
+MariaDB [sampledatabase]> INSERT INTO customers (customer_id, first_name, last_name, email, phone_number) VALUES(12,'abc
+','bca','bca@gmail.com',9765432172);
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [sampledatabase]> select * from customers;
++-------------+------------+-----------+---------------+--------------+
+| customer_id | first_name | last_name | email         | phone_number |
++-------------+------------+-----------+---------------+--------------+
+|          12 | abc        | bca       | bca@gmail.com | 9765432172   |
++-------------+------------+-----------+---------------+--------------+
+1 row in set (0.001 sec)
+
+

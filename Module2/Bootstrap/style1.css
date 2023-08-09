@@ -1,0 +1,18 @@
+.logo{
+    color:#9F0D7F;
+    font-family: 'Dancing Script', cursive;
+}
+.carousel-item img{
+width:100%;
+height: 80vh;
+}
+.accordion-item{
+    color:#04831f;
+    text-align: justify;
+}
+.accordion-button{
+    color:blue;
+}
+.contactus{
+    max-height:50%;
+}
