@@ -1,0 +1,65 @@
+Microsoft Windows [Version 10.0.22621.2134]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\drsab>cd..
+
+C:\Users>cd..
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql -u admin -p
+Enter password: *************
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use admin
+Database changed
+MariaDB [admin]> create table students(
+    ->  rollno int(5) PRIMARY KEY,
+    ->  sname varchar(30),
+    ->  contactno char(10)
+    -> );
+Query OK, 0 rows affected (0.025 sec)
+
+MariaDB [admin]> alter table students ADD emailid varchar(10);
+Query OK, 0 rows affected (0.021 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [admin]> desc students;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| rollno    | int(5)      | NO   | PRI | NULL    |       |
+| sname     | varchar(30) | YES  |     | NULL    |       |
+| contactno | char(10)    | YES  |     | NULL    |       |
+| emailid   | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.007 sec)
+
+MariaDB [admin]> select * from students;
+Empty set (0.007 sec)
+
+MariaDB [admin]> INSERT INTO students (rollno, sname, contactno, emailid) VALUES (2, 'def',’9812345678’, 'def@xyz.com');
+
+Query OK, 1 row affected, 1 warning (0.024 sec)
+
+MariaDB [admin]> INSERT INTO students (rollno, sname, contactno, emailid) VALUE (3, 'ghi',’9812345679’, 'ghi@xyz.com');
+Query OK, 1 row affected, 1 warning (0.004 sec)
+
+MariaDB [admin]>  select * from students;
++--------+-------+------------+------------+
+| rollno | sname | contactno  | emailid    |
++--------+-------+------------+------------+
+|      2 | def   | 9812345678 | def@xyz.co |
+|      3 | ghi   | 9812345679 | ghi@xyz.co |
++--------+-------+------------+------------+
+2 rows in set (0.001 sec)
